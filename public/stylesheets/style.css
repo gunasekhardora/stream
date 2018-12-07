@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  display : grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  grid-template-areas: 
+    ". i o .";
+    justify-content: center;
+    grid-gap: 50px;
+}
+.inputs {
+  grid-area: "i";
+  padding: 10px;
+  border: 1px solid #eeeeee;
+}
+input {
+  width: 80%;
+  display: flex;
+  margin-bottom: 10px;
+}
+.outputs {
+  grid-area: "o";
+  padding: 10px;
+  border: 1px solid #eeeeee;
+}
+button {
+  background: none;
+  border: 1px solid rgb(14, 13, 13);
+  border-radius: 3px;
+  margin-left: 10px;
+  padding: 5px;
+  width: 50px;
+}
+a {
+  color: #00B7FF;
+}
